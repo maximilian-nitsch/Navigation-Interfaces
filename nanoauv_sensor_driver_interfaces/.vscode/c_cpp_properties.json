@@ -1,0 +1,45 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/ni/ros2-triple_ws/install/septentrio_gnss_driver/include/**",
+        "/home/ni/ros2-triple_ws/install/navigation_utilities_package/include/**",
+        "/home/ni/ros2-triple_ws/install/nanoauv_sensor_driver_interfaces/include/**",
+        "/home/ni/ros2-triple_ws/install/nanoauv_perception_msgs/include/**",
+        "/home/ni/ros2-triple_ws/install/nanoauv_navigation_interfaces/include/**",
+        "/home/ni/ros2-triple_ws/install/nanoauv_map_provider_msgs/include/**",
+        "/home/ni/ros2-triple_ws/install/nanoauv_control_interfaces/include/**",
+        "/home/ni/ros2-triple_ws/install/mission_manager_interfaces/include/**",
+        "/home/ni/ros2-triple_ws/install/microstrain_inertial_msgs/include/**",
+        "/home/ni/ros2-triple_ws/install/external_pressure_sensor_package/include/**",
+        "/home/ni/ros2-triple_ws/install/emcore_tac-450-360-imu_driver/include/**",
+        "/home/ni/ros2-triple_ws/install/cmake_package_interfaces/include/**",
+        "/opt/ros/humble/include/**",
+        "/home/ni/ros2-triple_ws/src/depth-pressure-sensor-driver/include/**",
+        "/home/ni/ros2-triple_ws/src/depth-pressure-sensor-simulator/include/**",
+        "/home/ni/ros2-triple_ws/src/dvl-simulator/include/**",
+        "/home/ni/ros2-triple_ws/src/emcore-tac-450-360-imu-driver/include/**",
+        "/home/ni/ros2-triple_ws/src/gnss-simulator/include/**",
+        "/home/ni/ros2-triple_ws/src/imu-simulator/include/**",
+        "/home/ni/ros2-triple_ws/src/magnetometer-simulator/include/**",
+        "/home/ni/ros2-triple_ws/src/microstrain_inertial/microstrain_inertial_driver/include/**",
+        "/home/ni/ros2-triple_ws/src/navigation-filter/include/**",
+        "/home/ni/ros2-triple_ws/src/navigation-utilities/include/**",
+        "/home/ni/ros2-triple_ws/src/offline-trajectory-provider/include/**",
+        "/home/ni/ros2-triple_ws/src/septentrio_gnss_driver/include/**",
+        "/home/ni/ros2-triple_ws/src/usbl-simulator/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

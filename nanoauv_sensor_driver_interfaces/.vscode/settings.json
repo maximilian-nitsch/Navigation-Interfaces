@@ -1,0 +1,31 @@
+{
+    "ros.distro": "humble",
+    "python.autoComplete.extraPaths": [
+        "/home/ni/ros2-triple_ws/install/septentrio_gnss_driver/local/lib/python3.10/dist-packages",
+        "/home/ni/ros2-triple_ws/install/nanoauv_sensor_driver_interfaces/local/lib/python3.10/dist-packages",
+        "/home/ni/ros2-triple_ws/install/nanoauv_perception_msgs/local/lib/python3.10/dist-packages",
+        "/home/ni/ros2-triple_ws/install/nanoauv_navigation_interfaces/local/lib/python3.10/dist-packages",
+        "/home/ni/ros2-triple_ws/install/nanoauv_map_provider_msgs/local/lib/python3.10/dist-packages",
+        "/home/ni/ros2-triple_ws/install/nanoauv_control_interfaces/local/lib/python3.10/dist-packages",
+        "/home/ni/ros2-triple_ws/install/mission_manager_interfaces/local/lib/python3.10/dist-packages",
+        "/home/ni/ros2-triple_ws/install/microstrain_inertial_rqt/lib/python3.10/site-packages",
+        "/home/ni/ros2-triple_ws/install/microstrain_inertial_msgs/local/lib/python3.10/dist-packages",
+        "/home/ni/ros2-triple_ws/install/cmake_package_interfaces/local/lib/python3.10/dist-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/ni/ros2-triple_ws/install/septentrio_gnss_driver/local/lib/python3.10/dist-packages",
+        "/home/ni/ros2-triple_ws/install/nanoauv_sensor_driver_interfaces/local/lib/python3.10/dist-packages",
+        "/home/ni/ros2-triple_ws/install/nanoauv_perception_msgs/local/lib/python3.10/dist-packages",
+        "/home/ni/ros2-triple_ws/install/nanoauv_navigation_interfaces/local/lib/python3.10/dist-packages",
+        "/home/ni/ros2-triple_ws/install/nanoauv_map_provider_msgs/local/lib/python3.10/dist-packages",
+        "/home/ni/ros2-triple_ws/install/nanoauv_control_interfaces/local/lib/python3.10/dist-packages",
+        "/home/ni/ros2-triple_ws/install/mission_manager_interfaces/local/lib/python3.10/dist-packages",
+        "/home/ni/ros2-triple_ws/install/microstrain_inertial_rqt/lib/python3.10/site-packages",
+        "/home/ni/ros2-triple_ws/install/microstrain_inertial_msgs/local/lib/python3.10/dist-packages",
+        "/home/ni/ros2-triple_ws/install/cmake_package_interfaces/local/lib/python3.10/dist-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}
