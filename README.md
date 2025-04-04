@@ -10,6 +10,11 @@
 
 **Maintainer:**
   - Maximilian Nitsch <m.nitsch@irt.rwth-aachen.de>
+    
+**Contributors:**
+- Till Koch <tiko@uni-bremen.de>
+- Philippe Panten <p.panten@tu-braunschweig.de>
+
 <!--- protected region package header ends -->
 
 ## Description
