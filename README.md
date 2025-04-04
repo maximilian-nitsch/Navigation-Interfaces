@@ -1,55 +1,98 @@
-# Interfaces
+# C++/ROS 2 Navigation Interfaces
 
-Dedicated Repo for Interfaces (Messages, Services, Actions) of ROS2 Packages.
+[![License](https://img.shields.io/badge/license-BSD--3-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 
-## Reasoning:
+<!--- protected region package header begins -->
+**Author:**
+- Maximilian Nitsch <m.nitsch@irt.rwth-aachen.de>
 
-In theory, you could create custom messages in any package you want, but this could lead to many problems. 
-For example, if you create the message in package A and you need this message in package B, 
-you’ll have to add a dependency to package A. 
-This will quickly result in a dependency mess with unneeded and cycling dependencies.
+**Affiliation:** Institute of Automatic Control - RWTH Aachen University
 
-So, the best practice here is to create a package dedicated to ROS2 custom messages, and only that. 
-Then you’ll be able to add a dependency to this package, from any package requiring your custom interfaces.
+**Maintainer:**
+  - Maximilian Nitsch <m.nitsch@irt.rwth-aachen.de>
+<!--- protected region package header ends -->
 
-from: https://roboticsbackend.com/ros2-create-custom-message/
+## Description
+Dedicated Repo for Interfaces (Messages, Services, Actions) of ROS 2 Navigation Packages.
 
-## Naming Conventions:
+The simulator implements the following interfaces:
+- Sensor driver (and simulator) interfaces
+- Navigation interfaces
 
-### Folders
-A folder is a ROS2 package serving as collection of interfaces.
+## Table of Contents
 
-The name of the folder shall end with `_interfaces`.
-This is the new best practice for ROS2 Packages and supersedes the ROS1 convention `_msgs`.
+- [Dependencies](#dependencies)
+- [Installation](#installation)
+- [Further Reading](#further-readings)
+- [Contributing](#contributing)
+- [License](#license)
 
-The interfaces can be grouped by:
-- Interfaces for a ROS2 Package (`awesome_package_interfaces`)
-- Subject or Purpose (`sensor_interfaces`)
+# Dependencies
 
-### Files
+This project depends on:
 
-In General: Avoid abbreviation for the sake of clarity.
+- **ROS 2 Humble**: ROS 2 is a set of software libraries and tools for building robot applications: [ROS 2 Installation page](https://docs.ros.org/en/humble/Installation.html).
 
-- Messages
-  - CamelCase.msg
-- Services
-  - CamelCase.srv
-- Actions
-  - CamelCase.action
+# Installation
 
+To install the navigation interfaces, you need to follow these steps:
 
-#### Field names 
+1. **Install ROS 2 Humble**: Ensure you have ROS 2 (Humble) installed. You can follow the official installation instructions provided by ROS 2. Visit [ROS 2 Humble Installation page](https://docs.ros.org/en/humble/Installation.html) for detailed installation instructions tailored to your platform.
 
-In General: Avoid abbreviation for the sake of clarity.
+3. **Clone the Package**: Clone the package repository to your ROS 2 workspace. If you don't have a ROS 2 workspace yet, you can create one using the following commands:
 
-Add Comments for all fields. (`# comment`)
+    ```bash
+    mkdir -p /path/to/ros2_workspace/src
+    cd /path/to/ros2_workspace/src
+    ```
 
+    Now, clone the package repository:
 
-Field names must be lowercase alphanumeric characters with underscores for separating words. They must start with an alphabetic character, and they must not end with an underscore or have two consecutive underscores. [[Source]](https://docs.ros.org/en/humble/Concepts/Basic/About-Interfaces.html#field-names)
+    ```bash
+    git clone <repository_url>
+    ```
 
+    Replace `<repository_url>` with the URL of your package repository.
+
+4. **Build the Package**: Once the package is cloned, you must build it using colcon, the default build system for ROS 2. Navigate to your ROS 2 workspace and run the following command:
+
+    ```bash
+    cd /path/to/ros2_workspace
+    colcon build
+    ```
+
+    This command will build all the packages in your workspace, including the newly added package.
+
+5. **Using Navigation-Interfaces in Your ROS 2 Package**
+
+    To use the interfaces (messages, services, actions) provided by **Navigation-Interfaces** in your own ROS 2 package, follow these steps:
+    
+    In your package's `package.xml`, add:
+    
+    ```xml
+    <depend>navigation_interfaces</depend>
+     ```
+    In your package's `CMakeLists.txt`, add:
+    ```xml
+    find_package(navigation_interfaces REQUIRED)
+    
+    ament_target_dependencies(your_node_target
+      rclcpp
+      navigation_interfaces
+    )
+    ```  
+That's it! Your interfaces should now be installed and ready to use in your ROS 2 environment.
 
 ## Further Readings:
 
 - https://docs.ros.org/en/humble/Concepts/Basic/About-Interfaces.html
 - https://roboticsbackend.com/ros2-create-custom-message/
 - https://design.ros2.org/articles/legacy_interface_definition.html
+
+## Contributing
+
+You can see the [CONTRIBUTING](CONTRIBUTING) file for details if you'd like to contribute to the project.
+
+## License
+
+This project is licensed under the BSD-3-Clause License. Please look at the [LICENSE](LICENSE) file for details.
