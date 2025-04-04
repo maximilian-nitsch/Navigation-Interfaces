@@ -14,13 +14,12 @@
 **Contributors:**
 - Till Koch <tiko@uni-bremen.de>
 - Philippe Panten <p.panten@tu-braunschweig.de>
-
 <!--- protected region package header ends -->
 
 ## Description
 Dedicated Repo for Interfaces (Messages, Services, Actions) of ROS 2 Navigation Packages.
 
-The simulator implements the following interfaces:
+The simulator implements the following interface packages:
 - Sensor driver (and simulator) interfaces
 - Navigation interfaces
 
@@ -75,14 +74,17 @@ To install the navigation interfaces, you need to follow these steps:
     In your package's `package.xml`, add:
     
     ```xml
+    <depend>nanoauv_sensor_driver_interfaces</depend>
     <depend>navigation_interfaces</depend>
      ```
     In your package's `CMakeLists.txt`, add:
     ```xml
+    find_package(nanoauv_sensor_driver_interfaces REQUIRED)
     find_package(navigation_interfaces REQUIRED)
     
     ament_target_dependencies(your_node_target
       rclcpp
+      nanoauv_sensor_driver_interfaces
       navigation_interfaces
     )
     ```  
@@ -96,7 +98,7 @@ That's it! Your interfaces should now be installed and ready to use in your ROS 
 
 ## Contributing
 
-You can see the [CONTRIBUTING](CONTRIBUTING) file for details if you'd like to contribute to the project.
+If you'd like to contribute to the project, see the [CONTRIBUTING](CONTRIBUTING) file for details.
 
 ## License
 
