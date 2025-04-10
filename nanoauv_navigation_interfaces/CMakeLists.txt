@@ -25,8 +25,6 @@ find_package(diagnostic_msgs REQUIRED)
 set(msg_files
   "msg/Vector3WithCovariance.msg"
   "msg/FullStateNavigationSolution.msg"
-  "msg/AhrsSolution.msg"
-  "msg/VoterSolution.msg"
 )
 
 set(srv_files
