@@ -28,7 +28,6 @@ set(msg_files
   "msg/DvlBeam.msg"
   "msg/UsblLong.msg"
   "msg/UsblAngles.msg"
-  "msg/UsblMessage.msg"
   "msg/DepthPressure.msg"
   "msg/Magnetometer.msg"
   "msg/GnssPvt.msg"
