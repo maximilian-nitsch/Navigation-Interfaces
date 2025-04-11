@@ -1,6 +1,11 @@
 # C++/ROS 2 Navigation Interfaces
-
-[![License](https://img.shields.io/badge/license-BSD--3-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
+[![Build](https://github.com/maximilian-nitsch/Navigation-Interfaces/actions/workflows/ci.yaml/badge.svg)](https://github.com/maximilian-nitsch/Navigation-Interfaces/actions)
+[![License](https://img.shields.io/github/license/maximilian-nitsch/Navigation-Interfaces.svg)](https://github.com/maximilian-nitsch/Navigation-Interfaces/blob/main/LICENSE)
+[![Last Commit](https://img.shields.io/github/last-commit/maximilian-nitsch/Navigation-Interfaces)](https://github.com/maximilian-nitsch/Navigation-Interfaces/commits/main)
+[![ROS2 Humble](https://img.shields.io/badge/ROS2-Humble-blue)](https://index.ros.org/doc/ros2/Installation/Humble/)
+[![Release](https://img.shields.io/github/v/release/maximilian-nitsch/Navigation-Interfaces)](https://github.com/maximilian-nitsch/Navigation-Interfaces/releases)
+[![Open Issues](https://img.shields.io/github/issues/maximilian-nitsch/Navigation-Interfaces)](https://github.com/maximilian-nitsch/Navigation-Interfaces/issues)
+[![Contributors](https://img.shields.io/github/contributors/maximilian-nitsch/Navigation-Interfaces)](https://github.com/maximilian-nitsch/Navigation-Interfaces/graphs/contributors)
 
 <!--- protected region package header begins -->
 **Author:**
