@@ -26,25 +26,15 @@ set(msg_files
   "msg/InertialMeasurementUnit.msg"
   "msg/DvlVelocity.msg"
   "msg/DvlBeam.msg"
-  "msg/DvlConfig.msg"
-  "msg/DvlDeadReckoning.msg"
   "msg/UsblLong.msg"
   "msg/UsblAngles.msg"
-  "msg/UsblMessage.msg"
   "msg/DepthPressure.msg"
   "msg/Magnetometer.msg"
-  "msg/ChemicalParticleConcentration.msg"
-  "msg/ConductivityTemperatureSensor.msg"
   "msg/GnssPvt.msg"
   "msg/GnssAttitude.msg"
 )
 
 set(srv_files
-  "srv/DvlCalibrateGyro.srv"
-  "srv/DvlGetConfig.srv"
-  "srv/DvlResetDeadReckoning.srv"
-  "srv/DvlSetConfig.srv"
-  "srv/DvlTriggerPing.srv"
 )
 
 set(action_files
