@@ -7,8 +7,6 @@
 [![Open Issues](https://img.shields.io/github/issues/maximilian-nitsch/Navigation-Interfaces)](https://github.com/maximilian-nitsch/Navigation-Interfaces/issues)
 [![Contributors](https://img.shields.io/github/contributors/maximilian-nitsch/Navigation-Interfaces)](https://github.com/maximilian-nitsch/Navigation-Interfaces/graphs/contributors)
 
-[![License](https://img.shields.io/badge/license-BSD--3-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
-
 <!--- protected region package header begins -->
 **Author:**
 - Maximilian Nitsch <m.nitsch@irt.rwth-aachen.de>
